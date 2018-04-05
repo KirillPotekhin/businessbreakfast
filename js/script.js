@@ -2,6 +2,42 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
         navigation: true,
+
+        // Скрываем пагинатор начиная 8го .section и убераем хэдер у последнего экрана вер1
+        // var n = .section[],
+
+        // if (n>7 && '.fullpage .section.active') {
+        //     $('#fp-nav').addClass('header-hide');
+        //     else {
+        //         $('#fp-nav').removeClass('header-hide');
+        //     },
+        // },
+        // if (n=10 && '.fullpage .section.active') {
+        //     $('header').addClass('header-hide');
+        //     else {
+        //             $('header').removeClass('header-hide');
+        //         },
+        // },
+
+        // Скрываем пагинатор начиная 8го .section и убераем хэдер у последнего экрана вер2
+        // if (.fullpage .section.active.hide) {
+        //     $('#fp-nav').addClass('header-hide');
+        //     else {
+        //             $('#fp-nav').removeClass('header-hide');
+        //         },
+        // },
+        // if (.fullpage .section.active.hide-header) {
+        //     $('header').addClass('header-hide');
+        //     else {
+        //             $('header').removeClass('header-hide');
+        //         },
+        // },
+
+        // Отступ справа для пагинатора, потому что Пагинатор добавляется сам поместить его в контейнер нельзя
+        // var widthDocument = $(document).width,
+        // var widthContainer = $('.container').width,
+        // var marginR = (widthDocument-widthContainer)/2,
+        // #fp-nav.style.marginRight = 'marginR';
     });
 });
 

@@ -187,7 +187,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section hide">
         <div class="container"><div class="screen-second">
             <div class="row">
                 <div class="col-md-4">
@@ -224,7 +224,7 @@
             </div>
         </div></div>
     </div>
-    <div class="section">
+    <div class="section hide">
         <div class="container"><div class="screen-third">
             <div class="row">
                 <div class="col-md-6 col-xl-4">
@@ -244,7 +244,7 @@
             </div>
         </div></div>
     </div>
-    <div class="section">
+    <div class="section hide hide-header">
         <div class="container">
             <div class="screen-four">
                 <div class="row">
@@ -285,26 +285,26 @@
                         </button>
                         <p class="screen-four-remark">*Все поля обязательны</p>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h5 class="modal-title" id="exampleModalLabel">Спасибо за регистрацию!</h5>
-                                        <p>Ждём вас по адресу<br>
-                                            Вокзальная магистраль, 15, аудитория 707
-                                        </p>
-                                        <p class="font-weight-bold">15 марта с 10 до 12.00</p>
-                                        <img src="img/modal.png">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!--&lt;!&ndash; Modal &ndash;&gt;-->
+                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+                            <!--<div class="modal-dialog" role="document">-->
+                                <!--<div class="modal-content">-->
+                                    <!--<div class="modal-header">-->
+                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                                            <!--<span aria-hidden="true">&times;</span>-->
+                                        <!--</button>-->
+                                    <!--</div>-->
+                                    <!--<div class="modal-body">-->
+                                        <!--<h5 class="modal-title" id="exampleModalLabel">Спасибо за регистрацию!</h5>-->
+                                        <!--<p>Ждём вас по адресу<br>-->
+                                            <!--Вокзальная магистраль, 15, аудитория 707-->
+                                        <!--</p>-->
+                                        <!--<p class="font-weight-bold">15 марта с 10 до 12.00</p>-->
+                                        <!--<img src="img/modal.png">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                     <div class="col-md-7">
                         <div class="map-block" id="map"></div>
@@ -332,7 +332,26 @@
         </footer>
     </div>
 </div>
-<div class="swiper-pagination"></div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">Спасибо за регистрацию!</h5>
+                <p>Ждём вас по адресу<br>
+                    Вокзальная магистраль, 15, аудитория 707
+                </p>
+                <p class="font-weight-bold">15 марта с 10 до 12.00</p>
+                <img src="img/modal.png">
+            </div>
+        </div>
+    </div>
+</div>
 <!--<header>-->
     <!--<div class="container">-->
         <!--<img class="logo" src="img/logo.png" alt="Точка росы">-->

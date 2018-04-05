@@ -10,6 +10,11 @@ header {
     position: fixed;
     width: 100%;
     z-index: 11;
+    display: block;
+}
+
+.header-hide {
+    display: none;
 }
 
 header .container {
@@ -92,6 +97,8 @@ header .container .btn {
 }
 
 #fp-nav {
+    display: block;
+    height: 490px;
     top: 50%;
     transform: translateY(-50%);
     margin-top: 0 !important;
@@ -100,7 +107,11 @@ header .container .btn {
 #fp-nav ul li {
     width: 10px;
     height: 10px;
-    margin: 38px 0;
+    margin: 70px 0;
+}
+
+#fp-nav ul li:nth-of-type(8), #fp-nav ul li:nth-of-type(9), #fp-nav ul li:nth-of-type(10) {
+    display: none;
 }
 
 #fp-nav ul li:first-of-type {
@@ -159,18 +170,18 @@ header .container .btn {
     background: transparent;
 }
 
-/*#fp-nav ul li::after, .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet::after {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*width: 0;*/
-    /*height: 20px;*/
-    /*margin: 14px 9px 0;*/
-    /*border: .5px solid #000;*/
-/*}*/
+#fp-nav ul li::after, .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 50px;
+    margin: 14px 9px 0;
+    border: .5px solid #000;
+}
 
-/*#fp-nav ul li:last-child::after, .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet:last-child::after {*/
-    /*content: none;*/
-/*}*/
+#fp-nav ul li:nth-of-type(7)::after, .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet:last-child::after {
+    content: none;
+}
 
 /*Slide1*/
 
@@ -715,35 +726,35 @@ a:hover {
     color: #323c47;
 }
 
-.screen-four .modal .modal-dialog {
+.modal .modal-dialog {
     max-width: 490px;
     margin: 10rem auto;
 }
 
-.screen-four .modal .modal-header {
+.modal .modal-header {
     border: none;
 }
 
-.screen-four .modal .modal-header .close {
+.modal .modal-header .close {
     padding-top: 10px;
 }
 
-.screen-four .modal .modal-body {
+.modal .modal-body {
     position: relative;
     padding: 0 1rem 45px 110px;
 }
 
-.screen-four .modal .modal-body img {
+.modal .modal-body img {
     position: absolute;
     top: 9px;
     left: 34px;
 }
 
-.screen-four .modal .modal-title {
+.modal .modal-title {
     margin-bottom: 10px;
 }
 
-.screen-four .modal .modal-body p {
+.modal .modal-body p {
     margin: 0;
     font-size: 16px;
     line-height: 1.75;
@@ -767,9 +778,10 @@ a:hover {
     background-color: #323c47;
 }
 
-/*.screen-four .row div:last-of-type {*/
-    /*position: relative;*/
-/*}*/
+.screen-four .row .col-md-7, .screen-four .row .col-md-5 {
+    position: relative;
+}
+
 
 .screen-four .row div:last-of-type .map-information {
     position: absolute;
