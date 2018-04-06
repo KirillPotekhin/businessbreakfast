@@ -88,7 +88,13 @@ var map;
 DG.then(function () {
     console.log('123');
     map = DG.map('map', {
-        center: [54.98, 82.89],
-        zoom: 13
+        center: [55.03103649555158,82.915824718277],
+        zoom: 16
     });
+    // var point = DG.point('100', '100');
+    var myIcon = DG.divIcon({className: 'my-div-icon'});
+    var marker = DG.marker([55.032423069669996,82.912767], {icon: myIcon}).addTo(map);
+    marker.bindLabel('Ждём вас здесь', { static: true });
+    // marker.bindLabel('Ждём вас здесь', { static: true }, { offset: 'point' });
+    // console.log(point);
 });
