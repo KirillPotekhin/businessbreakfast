@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" />
-    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />-->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
     <link href="css/style.css" rel="stylesheet">
@@ -36,7 +37,8 @@
                                 <p>
                                     Листай ниже
                                     <span class="hint-arrow">
-                                    <i class="fas fa-arrow-down"></i>
+                                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                    <!--<i class="fas fa-arrow-down"></i>-->
                                 </span>
                                 </p>
                             </div>
@@ -162,22 +164,27 @@
                                 <p>
                                     Листай ниже
                                     <span class="hint-arrow">
-                                   <i class="fas fa-arrow-down"></i>
-                                </span>
+                                   <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                   <!--<i class="fas fa-arrow-down"></i>-->
+                                    </span>
                                 </p>
                             </div>
                             <div class="social">
                                 <a class="social-btn social-btn-instagram" href="#">
-                                    <i class="fab fa-instagram"></i>
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <!--<i class="fab fa-instagram"></i>-->
                                 </a>
                                 <a class="social-btn social-btn-twitter" href="#">
-                                    <i class="fab fa-twitter 3x"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <!--<i class="fab fa-twitter 3x"></i>-->
                                 </a>
                                 <a class="social-btn social-btn-facebook" href="#">
-                                    <i class="fab fa-facebook-f 2x"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    <!--<i class="fab fa-facebook-f 2x"></i>-->
                                 </a>
                                 <a class="social-btn social-btn-web" href="#">
                                     <i class="fa fa-globe" aria-hidden="true"></i>
+                                    <!--<i class="fas fa-globe"></i>-->
                                 </a>
                             </div>
                         </div>
@@ -257,25 +264,31 @@
                                     <label>ФИО</label>
                                     <input type='text' name='name' placeholder='Стив Видаскас Кикирович' required>
                                     <span>
-                                    <i class="fas fa-check"></i>
-                                    <i class="fas fa-times"></i>
-                                </span>
+                                        <!--<i class="fas fa-check"></i>-->
+                                        <!--<i class="fas fa-times"></i>-->
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                                 <div class="group">
                                     <label>E-MAIL</label>
                                     <input type='email' name='email' placeholder='Stevehere@gmail.com' required>
                                     <span>
-                                    <i class="fas fa-check"></i>
-                                    <i class="fas fa-times"></i>
-                                </span>
+                                        <!--<i class="fas fa-check"></i>-->
+                                            <!--<i class="fas fa-times"></i>-->
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                                 <div class="group">
                                     <label>Телефон</label>
                                     <input type='text' name='phone' placeholder='+7 (923) 236 25 25' required>
                                     <span>
-                                    <i class="fas fa-check"></i>
-                                    <i class="fas fa-times"></i>
-                                </span>
+                                        <!--<i class="fas fa-check"></i>-->
+                                        <!--<i class="fas fa-times"></i>-->
+                                        <i class="fa fa-check" aria-hidden="true"></i>
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </span>
                                 </div>
                             </fieldset>
                         </form>
@@ -284,27 +297,6 @@
                             Отправить
                         </button>
                         <p class="screen-four-remark">*Все поля обязательны</p>
-
-                        <!--&lt;!&ndash; Modal &ndash;&gt;-->
-                        <!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-                            <!--<div class="modal-dialog" role="document">-->
-                                <!--<div class="modal-content">-->
-                                    <!--<div class="modal-header">-->
-                                        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-                                            <!--<span aria-hidden="true">&times;</span>-->
-                                        <!--</button>-->
-                                    <!--</div>-->
-                                    <!--<div class="modal-body">-->
-                                        <!--<h5 class="modal-title" id="exampleModalLabel">Спасибо за регистрацию!</h5>-->
-                                        <!--<p>Ждём вас по адресу<br>-->
-                                            <!--Вокзальная магистраль, 15, аудитория 707-->
-                                        <!--</p>-->
-                                        <!--<p class="font-weight-bold">15 марта с 10 до 12.00</p>-->
-                                        <!--<img src="img/modal.png">-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
                     </div>
                     <div class="col-md-7">
                         <div class="map-block" id="map"></div>
@@ -318,15 +310,21 @@
             <div class="container">
                 <div class="social">
                     <a class="social-btn social-btn-instagram" href="#">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <!--<i class="fab fa-instagram"></i>-->
                     </a>
                     <a class="social-btn social-btn-twitter" href="#">
-                        <i class="fab fa-twitter 3x"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <!--<i class="fab fa-twitter 3x"></i>-->
                     </a>
                     <a class="social-btn social-btn-facebook" href="#">
-                        <i class="fab fa-facebook-f 2x"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <!--<i class="fab fa-facebook-f 2x"></i>-->
                     </a>
-                    <a class="social-btn social-btn-цуи" href="#">Веб-сайт</a>
+                    <a class="social-btn social-btn-web" href="#">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <!--<i class="fab fa-globe"></i>-->
+                    </a>
                 </div>
             </div>
         </footer>

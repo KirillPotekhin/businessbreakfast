@@ -32,13 +32,20 @@ $(document).ready(function() {
         //             $('header').removeClass('header-hide');
         //         },
         // },
-
-        // Отступ справа для пагинатора, потому что Пагинатор добавляется сам поместить его в контейнер нельзя
-        // var widthDocument = $(document).width,
-        // var widthContainer = $('.container').width,
-        // var marginR = (widthDocument-widthContainer)/2,
-        // #fp-nav.style.marginRight = 'marginR';
     });
+    var widthDocument = $(window).width();
+    var widthContainer = $('.container').width();
+    var marginR = (widthDocument-widthContainer)/2;
+    $('#fp-nav').css({'margin-right': marginR + `px`});
+
+    $(window).on('resize', function () {
+        var widthDocument = $(window).width();
+        var widthContainer = $('.container').width();
+        var marginR = (widthDocument-widthContainer)/2;
+        $('#fp-nav').css({'margin-right': marginR + `px`});
+    });
+    // Отступ справа для пагинатора, потому что Пагинатор добавляется сам поместить его в контейнер нельзя
+
 });
 
 $(document).on('click', '#moveTo', function(){
