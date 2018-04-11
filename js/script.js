@@ -1,55 +1,69 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
-        navigation: true,
+    var fullPage;
+    function initFullPage() {
+        fullPage = $('#fullpage').fullpage({
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
+            navigation: true,
+            onLeave: function (index, nextIndex) {
+                console.log(index, nextIndex);
+                if (nextIndex > 7) {
+                    $('#fp-nav').addClass('header-hide');
+                } else {
+                    $('#fp-nav').removeClass('header-hide');
+                }
+                if (nextIndex > 9) {
+                    $('header').addClass('header-hide');
+                } else {
+                    $('header').removeClass('header-hide');
+                }
+            }
+        });
+        var widthDocument = $(window).width();
+        var widthContainer = $('.container').width();
+        var marginR = (widthDocument-widthContainer)/2;
+        $('#fp-nav').css({'margin-right': marginR + 'px'});
+    }
 
-        // Скрываем пагинатор начиная 8го .section и убераем хэдер у последнего экрана вер1
-        // var n = .section[],
 
-        // if (n>7 && '.fullpage .section.active') {
-        //     $('#fp-nav').addClass('header-hide');
-        //     else {
-        //         $('#fp-nav').removeClass('header-hide');
-        //     },
-        // },
-        // if (n=10 && '.fullpage .section.active') {
-        //     $('header').addClass('header-hide');
-        //     else {
-        //             $('header').removeClass('header-hide');
-        //         },
-        // },
-
-        // Скрываем пагинатор начиная 8го .section и убераем хэдер у последнего экрана вер2
-        // if (.fullpage .section.active.hide) {
-        //     $('#fp-nav').addClass('header-hide');
-        //     else {
-        //             $('#fp-nav').removeClass('header-hide');
-        //         },
-        // },
-        // if (.fullpage .section.active.hide-header) {
-        //     $('header').addClass('header-hide');
-        //     else {
-        //             $('header').removeClass('header-hide');
-        //         },
-        // },
-    });
-    var widthDocument = $(window).width();
-    var widthContainer = $('.container').width();
-    var marginR = (widthDocument-widthContainer)/2;
-    $('#fp-nav').css({'margin-right': marginR + `px`});
 
     $(window).on('resize', function () {
         var widthDocument = $(window).width();
         var widthContainer = $('.container').width();
-        var marginR = (widthDocument-widthContainer)/2;
-        $('#fp-nav').css({'margin-right': marginR + `px`});
+        var marginR = (widthDocument - widthContainer) / 2;
+        $('#fp-nav').css({'margin-right': marginR + 'px'});
+        // Отступ справа для пагинатора, потому что Пагинатор добавляется сам поместить его в контейнер нельзя
+        if (widthDocument > 768) {
+            initFullPage();
+        } else {
+            $.fn.fullpage.destroy('all');
+            fullPage = undefined;
+        }
     });
-    // Отступ справа для пагинатора, потому что Пагинатор добавляется сам поместить его в контейнер нельзя
-
+    var widthDocument = $(window).width();
+    if (widthDocument > 768 && !fullPage) {
+        initFullPage();
+    }
 });
 
 $(document).on('click', '#moveTo', function(){
-    $.fn.fullpage.moveTo('page10');
+    var widthDocument = $(window).width();
+    if (widthDocument > 768) {
+        $.fn.fullpage.moveTo('page10');
+    } else {
+        console.log('777');
+        if (widthDocument <= 375) {
+            $("html, body").animate({ scrollTop: $(document).height()-2.1*$(window).height() });
+            console.log('000');
+        }
+        if (widthDocument > 375 && widthDocument <= 414) {
+            $("html, body").animate({ scrollTop: $(document).height()-1.92*$(window).height() });
+            console.log('000');
+        }
+        if (widthDocument > 414 && widthDocument < 768) {
+            $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+            console.log('999');
+        }
+    }
 });
 
 // var swiper = new Swiper('.swiper-container', {
