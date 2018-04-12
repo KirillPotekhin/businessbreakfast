@@ -52,7 +52,7 @@ $(document).on('click', '#moveTo', function(){
     } else {
         console.log('777');
         if (widthDocument <= 375) {
-            $("html, body").animate({ scrollTop: $(document).height()-2.1*$(window).height() });
+            $("html, body").animate({ scrollTop: $(document).height()-2*$(window).height() });
             console.log('000');
         }
         if (widthDocument > 375 && widthDocument <= 414) {

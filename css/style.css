@@ -1094,7 +1094,7 @@ footer .social a {
         padding: 19px 21px;
     }
 
-    .screen-first-footer .swiper-slide-hint {
+    .screen-first.screen-first-footer .swiper-slide-hint {
         position: absolute;
         bottom: -85px;
         left: 50%;
@@ -1102,7 +1102,7 @@ footer .social a {
         margin: 0 8px;
     }
 
-    .screen-first-footer  .social {
+    .screen-first.screen-first-footer .social {
         position: absolute;
         bottom: -40px;
         left: 50%;
