@@ -21,6 +21,7 @@ $(document).ready(function() {
                 // $('.fp-section').addClass('fp-section--fade');
                 // $('.fp-section').removeClass('active--fade');
                 // $('.fp-section').removeClass('active--fade');
+                $('body').removeClass('init');
 
                 // $('.fp-section.active').addClass('active--fade');
             }
@@ -60,13 +61,17 @@ $(document).on('click', '#moveTo', function(){
         $.fn.fullpage.moveTo('page10');
     } else {
         console.log('777');
-        if (widthDocument <= 375) {
-            $("html, body").animate({ scrollTop: $(document).height()-2*$(window).height() });
-            console.log('000');
+        if (widthDocument <= 320) {
+            $("html, body").animate({scrollTop: $(document).height() - 2.12 * $(window).height()});
+            console.log('600');
+        }
+        if (widthDocument > 320 && widthDocument <= 375) {
+            $("html, body").animate({ scrollTop: $(document).height()-1.92*$(window).height() });
+            console.log('700');
         }
         if (widthDocument > 375 && widthDocument <= 414) {
-            $("html, body").animate({ scrollTop: $(document).height()-1.92*$(window).height() });
-            console.log('000');
+            $("html, body").animate({ scrollTop: $(document).height()-1.85*$(window).height() });
+            console.log('800');
         }
         if (widthDocument > 414 && widthDocument < 992) {
             $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
