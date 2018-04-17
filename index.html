@@ -18,23 +18,92 @@
     <div class="container">
         <img class="logo" src="img/logo.png" alt="Точка росы">
         <button class="register btn btn-lg btn-outline-dark" id="moveTo" type="button">
-            Зарегистрироваться
+            Регистрация
         </button>
     </div>
 </header>
-<div id="fullpage">
-    <div class="section">
+<div class="swiper-container d-lg-none">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-wrapper-slide1">
+            <img src="img/slider1.png">
+            <div class="swiper-slide-addtional">
+                <img class="swiper-slide-additional" src="img/slide1-additional.png">
+                <p class="additional-text">Это Аня, маркетолог.</p>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide2">
+            <img src="img/slider2.png">
+            <div class="swiper-slide-addtional">
+                <p class="additional-text">Неделю назад она запустила лэндинг, и он уже принес 10 новых клиентов.</p>
+            </div>
+            <div class="swiper-slide-plus">
+                <p class="additional-text">+10</p>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide3">
+            <img src="img/slider3.png">
+            <div class="swiper-slide-addtional">
+                <p class="additional-text">Рассылка, которую она запустила четыре дня назад, принесла еще 5</p>
+            </div>
+            <div class="swiper-slide-plus">
+                <p class="additional-text">+5</p>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide4">
+            <img src="img/slider4.png">
+            <div class="swiper-slide-addtional">
+                <p class="additional-text">а вчерашняя акция 6.</p>
+            </div>
+            <div class="swiper-slide-plus">
+                <p class="additional-text">+6</p>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide5">
+            <img src="img/slider5.png">
+            <div class="swiper-slide-addtional">
+                <p class="additional-text">Аня довольна,</p>
+            </div>
+            <div class="swiper-slide-plus">
+                <img src="img/slide5-plus.png">
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide6">
+            <img src="img/slider6.png">
+            <div class="swiper-slide-addtional">
+                <p class="additional-text">доволен руководитель отдела продаж, все довольны.</p>
+            </div>
+            <div class="swiper-slide-plus">
+                <p class="additional-text">+</p>
+            </div>
+            <div class="swiper-slide-plus1">
+                <p class="additional-text">+</p>
+            </div>
+        </div>
+        <div class="swiper-slide swiper-wrapper-slide7">
+            <img src="img/slider7.png">
+            <div class="swiper-slide-addtional">
+                <img class="additional-img" src="img/slide1-additional.png">
+                <p class="additional-text">Приходите на бесплатный бизнес-завтрак, и мы расскажем об этом.</p>
+            </div>
+            <div class="swiper-slide-addtional1">
+                <p class="additional-text">Аня знает, что делает. <br> Но как у неё это получается?</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="fullpage" class="d-none d-sm-block">
+    <div class="section d-none d-md-block">
         <div class="container">
             <div class="screen-first">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide1">
-                            <img src="img/slider1.png">
+                            <img class="slider-img" src="img/slider1.png">
                             <div class="swiper-slide-addtional">
                                 <img class="swiper-slide-additional" src="img/slide1-additional.png">
                                 <p class="additional-text">Это Аня, маркетолог.</p>
                             </div>
-                            <div class="swiper-slide-hint">
+                            <div class="swiper-slide-hint d-none">
                                 <p>
                                     Листай ниже
                                     <span class="hint-arrow">
@@ -55,7 +124,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide2">
-                            <img src="img/slider2.png">
+                            <img class="slider-img" src="img/slider2.png">
                             <div class="swiper-slide-addtional">
                                 <p class="additional-text">Неделю назад она запустила лэндинг, и он уже принес 10 новых клиентов.</p>
                             </div>
@@ -74,7 +143,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide3">
-                            <img src="img/slider3.png">
+                            <img class="slider-img" src="img/slider3.png">
                             <div class="swiper-slide-addtional">
                                 <p class="additional-text">Рассылка, которую она запустила четыре дня назад, принесла еще 5</p>
                             </div>
@@ -93,7 +162,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide4">
-                            <img src="img/slider4.png">
+                            <img class="slider-img" src="img/slider4.png">
                             <div class="swiper-slide-addtional">
                                 <p class="additional-text">а вчерашняя акция 6.</p>
                             </div>
@@ -112,7 +181,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide5">
-                            <img src="img/slider5.png">
+                            <img class="slider-img" src="img/slider5.png">
                             <div class="swiper-slide-addtional">
                                 <p class="additional-text">Аня довольна,</p>
                             </div>
@@ -131,7 +200,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide6">
-                            <img src="img/slider6.png">
+                            <img class="slider-img" src="img/slider6.png">
                             <div class="swiper-slide-addtional">
                                 <p class="additional-text">доволен руководитель отдела продаж, все довольны.</p>
                             </div>
@@ -153,7 +222,7 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide swiper-wrapper-slide7">
-                            <img src="img/slider7.png">
+                            <img class="slider-img" src="img/slider7.png">
                             <div class="swiper-slide-addtional">
                                 <img class="additional-img" src="img/slide1-additional.png">
                                 <p class="additional-text">Приходите на бесплатный бизнес-завтрак, и мы расскажем об этом.</p>
@@ -164,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide-hint">
+                <div class="swiper-slide-hint d-none">
                     <p>
                         Листай ниже
                         <span class="hint-arrow">
@@ -173,7 +242,7 @@
                         </span>
                     </p>
                 </div>
-                <div class="social">
+                <div class="social d-none">
                     <a class="social-btn social-btn-instagram" href="#">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                         <!--<i class="fab fa-instagram"></i>-->
@@ -262,8 +331,7 @@
                         <form action="#" id='send' method='POST'>
                             <fieldset>
                                 <div class="group">
-                                    <label>ФИО</label>
-                                    <input type='text' name='name' placeholder='Стив Видаскас Кикирович' required>
+                                    <input type='text' name='name' placeholder='ФИО' required>
                                     <span>
                                         <!--<i class="fas fa-check"></i>-->
                                         <!--<i class="fas fa-times"></i>-->
@@ -272,8 +340,7 @@
                                     </span>
                                 </div>
                                 <div class="group">
-                                    <label>E-MAIL</label>
-                                    <input type='email' name='email' placeholder='Stevehere@gmail.com' required>
+                                    <input type='email' name='email' placeholder='E-mail' required>
                                     <span>
                                         <!--<i class="fas fa-check"></i>-->
                                             <!--<i class="fas fa-times"></i>-->
@@ -282,8 +349,7 @@
                                     </span>
                                 </div>
                                 <div class="group">
-                                    <label>Телефон</label>
-                                    <input type='text' name='phone' placeholder='+7 (923) 236 25 25' required>
+                                    <input type='text' name='phone' placeholder='Телефон' required>
                                     <span>
                                         <!--<i class="fas fa-check"></i>-->
                                         <!--<i class="fas fa-times"></i>-->
