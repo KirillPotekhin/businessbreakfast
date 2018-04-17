@@ -1345,7 +1345,8 @@ footer .social a {
     }
 
     .screen-second .row:last-of-type span::before {
-        margin: 35px 2px -21px 10px;
+        width: 267px;
+        margin: 30px auto -21px;
     }
 
     .screen-second .row:last-of-type p:nth-child(2) {
@@ -1353,11 +1354,13 @@ footer .social a {
     }
 
     .screen-second .row:last-of-type span::after {
-        margin: -36px 18px 0 18px;
+        width: 252px;
+        margin: -36px auto 0px;
     }
 
     .screen-second .row:last-of-type .losung::after {
-        margin: 20px 80px 0 74px;
+        width: 134px;
+        margin: 20px auto 0px;
     }
 
     .screen-second .row:last-of-type p:last-of-type {
