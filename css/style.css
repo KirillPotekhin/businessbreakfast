@@ -215,7 +215,7 @@ header .container .btn {
 
 .swiper-slide-hint {
     position: absolute;
-    bottom: 0;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
 }

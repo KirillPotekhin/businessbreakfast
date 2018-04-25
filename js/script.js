@@ -2,7 +2,7 @@ $(document).ready(function() {
     var fullPage;
     function initFullPage() {
         fullPage = $('#fullpage').fullpage({
-            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page13', 'page14', 'page15', 'page16', 'page17', 'page18', 'page19', 'page20', 'page21', 'page22', 'page23', 'page24'],
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10', 'page11', 'page12', 'page13', 'page14', 'page15', 'page16', 'page17', 'page18', 'page19', 'page20', 'page21', 'page22', 'page23'],
             // navigation: true,
             // $('.fp-section').addClass('fp-section--fade');
             onLeave: function (index, nextIndex) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
                 // } else {
                 //     $('#fp-nav').removeClass('header-hide');
                 // }
-                if (nextIndex > 23) {
+                if (nextIndex > 22) {
                     $('header').addClass('header-hide');
                 } else {
                     $('header').removeClass('header-hide');
@@ -58,7 +58,7 @@ $(document).ready(function() {
 $(document).on('click', '#moveTo', function(){
     var widthDocument = $(window).width();
     if (widthDocument > 992) {
-        $.fn.fullpage.moveTo('page24');
+        $.fn.fullpage.moveTo('page23');
     } else {
         console.log('777');
         if (widthDocument <= 320) {
