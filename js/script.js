@@ -53,6 +53,21 @@ $(document).ready(function() {
     if (widthDocument > 992 && !fullPage) {
         initFullPage();
     }
+
+    $('#contactForm').submit(function(e) {
+        e.preventDefault();
+        var form = e.target;
+        var data = {
+            name: $(form.name).val(),
+            email: $(form.email).val(),
+            phone: $(form.phone).val(),
+        };
+        $.post('https://formspree.io/Shenin@tochkarosy.com', data)
+            .done(function() {
+                $('#exampleModal').modal('show');
+                console.log('email.sent');
+            });
+    });
 });
 
 $(document).on('click', '#moveTo', function(){
