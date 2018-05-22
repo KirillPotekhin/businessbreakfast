@@ -1,4 +1,89 @@
+var widthDocument = $(window).width();
+
 $(document).ready(function() {
+    $(window).on('scroll', function () {
+        var scroll = $(window).scrollTop();
+        var x = ($(document).height() - $(document).scrollTop()) / $(window).height();
+        console.log(x);
+
+        if (widthDocument <= 320) {
+            if (scroll >= $(document).height() - 5.74 * $(window).height()) {
+                $('.button-wrapper__item--button-two').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-two').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 3.82 * $(window).height()) {
+                $('.button-wrapper__item--button-three').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-three').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 2.23 * $(window).height()) {
+                $('header').addClass('header-hide');
+            } else {
+                $('header').removeClass('header-hide');
+            }
+        }
+        if (widthDocument > 320 && widthDocument <= 375) {
+            if (scroll >= $(document).height() - 5.07 * $(window).height()) {
+                $('.button-wrapper__item--button-two').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-two').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 3.4 * $(window).height()) {
+                $('.button-wrapper__item--button-three').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-three').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 1.92 * $(window).height()) {
+                $('header').addClass('header-hide');
+            } else {
+                $('header').removeClass('header-hide');
+            }
+        }
+        if (widthDocument > 375 && widthDocument <= 414) {
+            if (scroll >= $(document).height() - 4.75 * $(window).height()) {
+                $('.button-wrapper__item--button-two').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-two').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 3.18 * $(window).height()) {
+                $('.button-wrapper__item--button-three').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-three').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 1.85 * $(window).height()) {
+                $('header').addClass('header-hide');
+            } else {
+                $('header').removeClass('header-hide');
+            }
+        }
+        if (widthDocument > 414 && widthDocument < 992) {
+            if (scroll >= $(document).height() - 3.08 * $(window).height()) {
+                $('.button-wrapper__item--button-two').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-two').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 1.63 * $(window).height()) {
+                $('.button-wrapper__item--button-three').addClass('header-hide');
+            } else {
+                $('.button-wrapper__item--button-three').removeClass('header-hide');
+            }
+
+            if (scroll >= $(document).height() - 1.05 * $(window).height()) {
+                $('header').addClass('header-hide');
+            } else {
+                $('header').removeClass('header-hide');
+            }
+        }
+    });
+
     var fullPage;
     function initFullPage() {
         fullPage = $('#fullpage').fullpage({
@@ -12,6 +97,18 @@ $(document).ready(function() {
                 // } else {
                 //     $('#fp-nav').removeClass('header-hide');
                 // }
+                if (nextIndex > 20) {
+                    $('.button-wrapper__item--button-two').addClass('header-hide');
+                } else {
+                    $('.button-wrapper__item--button-two').removeClass('header-hide');
+                }
+
+                if (nextIndex > 21) {
+                    $('.button-wrapper__item--button-three').addClass('header-hide');
+                } else {
+                    $('.button-wrapper__item--button-three').removeClass('header-hide');
+                }
+
                 if (nextIndex > 22) {
                     $('header').addClass('header-hide');
                 } else {
@@ -34,10 +131,8 @@ $(document).ready(function() {
 
     }
 
-
-
     $(window).on('resize', function () {
-        var widthDocument = $(window).width();
+        // var widthDocument = $(window).width();
         var widthContainer = $('.container').width();
         // var marginR = (widthDocument - widthContainer) / 2;
         // $('#fp-nav').css({'margin-right': marginR + 'px'});
@@ -71,25 +166,75 @@ $(document).ready(function() {
 });
 
 $(document).on('click', '#moveTo', function(){
-    var widthDocument = $(window).width();
+    // var widthDocument = $(window).width();
     if (widthDocument > 992) {
         $.fn.fullpage.moveTo('page23');
     } else {
         console.log('777');
         if (widthDocument <= 320) {
-            $("html, body").animate({scrollTop: $(document).height() - 2.12 * $(window).height()});
+            $("html, body").animate({scrollTop: $(document).height() - 2.02 * $(window).height()});
             console.log('600');
         }
         if (widthDocument > 320 && widthDocument <= 375) {
-            $("html, body").animate({ scrollTop: $(document).height()-1.92*$(window).height() });
+            $("html, body").animate({ scrollTop: $(document).height()-1.84*$(window).height() });
             console.log('700');
         }
         if (widthDocument > 375 && widthDocument <= 414) {
-            $("html, body").animate({ scrollTop: $(document).height()-1.85*$(window).height() });
+            $("html, body").animate({ scrollTop: $(document).height()-1.77*$(window).height() });
             console.log('800');
         }
         if (widthDocument > 414 && widthDocument < 992) {
             $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+            console.log('999');
+        }
+    }
+});
+
+$(document).on('click', '#moveTo-two', function(){
+    // var widthDocument = $(window).width();
+    if (widthDocument > 992) {
+        $.fn.fullpage.moveTo('page21');
+    } else {
+        console.log('777');
+        if (widthDocument <= 320) {
+            $("html, body").animate({scrollTop: $(document).height() - 5.66 * $(window).height()});
+            console.log('602');
+        }
+        if (widthDocument > 320 && widthDocument <= 375) {
+            $("html, body").animate({ scrollTop: $(document).height()-5.01*$(window).height() });
+            console.log('700');
+        }
+        if (widthDocument > 375 && widthDocument <= 414) {
+            $("html, body").animate({ scrollTop: $(document).height()-4.69*$(window).height() });
+            console.log('800');
+        }
+        if (widthDocument > 414 && widthDocument < 992) {
+            $("html, body").animate({ scrollTop: $(document).height()-2.85*$(window).height() });
+            console.log('999');
+        }
+    }
+});
+
+$(document).on('click', '#moveTo-three', function(){
+    // var widthDocument = $(window).width();
+    if (widthDocument > 992) {
+        $.fn.fullpage.moveTo('page22');
+    } else {
+        console.log('777');
+        if (widthDocument <= 320) {
+            $("html, body").animate({scrollTop: $(document).height() - 3.63 * $(window).height()});
+            console.log('603');
+        }
+        if (widthDocument > 320 && widthDocument <= 375) {
+            $("html, body").animate({ scrollTop: $(document).height()-3.24*$(window).height() });
+            console.log('700');
+        }
+        if (widthDocument > 375 && widthDocument <= 414) {
+            $("html, body").animate({ scrollTop: $(document).height()-3.08*$(window).height() });
+            console.log('800');
+        }
+        if (widthDocument > 414 && widthDocument < 992) {
+            $("html, body").animate({ scrollTop: $(document).height()-1.59*$(window).height() });
             console.log('999');
         }
     }

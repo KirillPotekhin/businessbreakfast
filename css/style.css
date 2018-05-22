@@ -7,7 +7,7 @@ body {
     position: relative;
 }
 
-header {
+.header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -19,35 +19,33 @@ header {
     display: none !important;
 }
 
-header .container {
-    /*position: fixed;*/
+.container-header {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-header .container {
+.button-wrapper {
+    margin-left: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: inherit;
+    flex-wrap: wrap;
 }
 
-header .container .btn {
+.button-wrapper .btn {
     font-weight: 500;
     border: 2px solid #000;
 }
 
-/*.header-container img.logo {*/
-    /*position: fixed;*/
-    /*top: 44px;*/
-    /*left: 100px;*/
-    /*z-index: 11;*/
-/*}*/
+.button-wrapper__item {
+    margin-left: 7%;
+}
 
-/*.header-container .btn {*/
-    /*position: fixed;*/
-    /*top: 44px;*/
-    /*right: 102px;*/
-    /*z-index: 11;*/
-/*}*/
+/* .button-wrapper__item:first-of-type {
+    margin-left: ;
+} */
 
 /*Swiper*/
 
@@ -918,7 +916,30 @@ footer .social a {
     color: #ffffff;
 }
 
+@media (min-width: 415px) and (max-width: 991px) {
+    .screen-third {
+        margin-top: 70px;
+    }
+
+    .screen-four {
+        margin-top: 70px;
+    }
+}
+
 @media (max-width: 991px) {
+    .container {
+        max-width: 760px;
+    }
+
+    .button-wrapper__item {
+        margin-left: 100%;
+        margin-top: 10px;
+    }
+
+    .button-wrapper__item:first-of-type {
+        margin-top: 0;
+    }
+
     .screen-second .col-lg-4:first-of-type, .screen-second .col-lg-4:nth-of-type(2), .screen-second .col-lg-4:last-of-type {
         padding-top: 0;
     }

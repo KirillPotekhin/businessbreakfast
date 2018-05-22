@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.css" />
-    <!--<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />-->
-    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
@@ -14,12 +12,20 @@
     <title>Бизнес завтрак</title>
 </head>
 <body class="init">
-<header>
-    <div class="container">
-        <img class="logo" src="img/logo.png" alt="Точка росы">
-        <button class="register btn btn-lg btn-outline-dark" id="moveTo" type="button">
-            Регистрация
-        </button>
+<header class="header">
+    <div class="container container-header">
+        <img class="logo" src="img/logo.png" alt="Точка росы" width="130" height="51">
+        <div class="button-wrapper">
+            <button class="button-wrapper__item button-wrapper__item--button-two btn btn-lg btn-outline-dark" id="moveTo-two" type="button">
+                Второй
+            </button>
+            <button class="button-wrapper__item button-wrapper__item--button-three btn btn-lg btn-outline-dark" id="moveTo-three" type="button">
+                Третий
+            </button>
+            <button class="button-wrapper__item register btn btn-lg btn-outline-dark" id="moveTo" type="button">
+                Регистрация
+            </button>
+        </div>
     </div>
 </header>
 <div class="swiper-container d-lg-none">
